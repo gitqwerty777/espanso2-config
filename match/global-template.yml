@@ -1,0 +1,59 @@
+# global_vars:
+#   - name: date
+#     type: date
+#     params:
+#       format: "%Y/%m/%d"
+#   - name: time
+#     type: date
+#     params:
+#       format: "%H:%M:%S"
+#   - name: datetime
+#     type: date
+#     params:
+#       format: "%Y/%m/%d %H:%M:%S"
+#   - name: name
+#     type: dummy
+#     params:
+#       echo: John Doe
+#   - name: tid
+#     type: dummy
+#     params:
+#       echo: 9545371578
+#   - name: account
+#     type: dummy
+#     params:
+#       echo: gitqwerty777
+#   - name: phoneg
+#     type: dummy
+#     params:
+#       echo: "+881 954-391-8288"
+#   - name: phone
+#     type: dummy
+#     params:
+#       echo: "954-391-8288"
+#   - name: ad2
+#     type: dummy
+#     params:
+#       echo: 123 W Main St, Knoxville, TN
+#   - name: ad1
+#     type: dummy
+#     params:
+#       echo: 123 W Main St, Knoxville, TN
+#   - name: ad0
+#     type: dummy
+#     params:
+#       echo: 123 W Main St, Knoxville, TN
+#   - name: mainEmail
+#     type: dummy
+#     params:
+#       echo: a@netscape.com
+# matches:
+#   - trigger: ";status"
+#     replace: Espanso is running!
+#   - trigger: ";config"
+#     replace: "{{output}}"
+#     vars:
+#       - name: output
+#         type: shell
+#         params:
+#           cmd: "Invoke-Item -Path \"$env:appdata\\Espanso\""

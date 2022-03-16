@@ -4,4 +4,6 @@
 
 name: VSCode
 filter_exec: Code.exe
+
+# For Emacs hotkey
 paste_shortcut: "CTRL+Y"
