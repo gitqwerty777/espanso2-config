@@ -1,0 +1,37 @@
+# two prefix to prevent collision
+
+matches:
+  - trigger: ";;x"
+    replace: ❌
+  - trigger: ";;check"
+    replace: ✔️
+  - trigger: ";;o"
+    replace: ⭕
+  - trigger: ";;-"
+    replace: ➖
+  - trigger: ";;arrow"
+    replace: ▶️
+  - trigger: ";;pill"
+    replace: 💊
+  - trigger: ";;th"
+    replace: 🤔
+  - trigger: ";;2o"
+    replace: 🎯
+  - trigger: ";;?"
+    replace: ❓
+  - trigger: ";;!"
+    replace: ❗
+  - trigger: ";;feat"
+    replace: 🪶
+  - trigger: ";;knife"
+    replace: 🔪
+  - trigger: ";;bug"
+    replace: 🐛
+  - trigger: ";;dice"
+    replace: 🎲
+  - trigger: ";;slot"
+    replace: 🎰
+  - trigger: ";;tw"
+    replace: 🇹🇼
+  - trigger: ";;example-emoticon"
+    replace: σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ

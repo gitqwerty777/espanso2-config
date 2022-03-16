@@ -1,0 +1,67 @@
+matches:
+  # Markdown
+  - trigger: ";mdheader"
+    replace: |
+      title:
+      date: {{datetime}}
+      categories:
+      tags: []
+      description:
+      ---
+  - trigger: ";md2header"
+    replace: |
+      title:
+      date: {{datetime}}
+      categories:
+      tags: []
+      description:
+      top_img: ./img/
+      cover: ./img/
+      ---
+  - trigger: ";code"
+    replace: |-
+      ```
+      $|$
+      ```
+  - trigger: ";pcode"
+    vars:
+      - name: clipboard
+        type: clipboard
+    replace: |-
+      ```
+      {{clipboard}}
+      ```
+  - trigger: ";collapse"
+    replace: "\n<details>\n\t<summary>$|$</summary>\n\t<p></p>\n</details>"
+  - trigger: ";link"
+    replace: "[]($|$)"
+  - trigger: ";plink"
+    replace: "[$|$]({{clipboard}})"
+    vars:
+      - name: clipboard
+        type: clipboard
+  - trigger: ";img"
+    replace: "![](/img/$|$.png)"
+  - trigger: ";pimg"
+    replace: "![$|$]({{clipboard}})"
+    vars:
+      - name: clipboard
+        type: clipboard
+  - trigger: ";mdtemplate"
+    replace: "
+      ## 簡介\n
+      ## 方法\n
+      ## 實作\n
+      ## 總結\n
+      ## 參考資料\n
+    "
+  - trigger: ";ref"
+    replace: "## 參考資料"
+  # html
+  - trigger: ";<a"
+    replace: "<a href='{{clipboard}}' />$|$</a>"
+    vars:
+      - name: clipboard
+        type: clipboard
+  - trigger: ";<i"
+    replace: "<img src='$|$' />"

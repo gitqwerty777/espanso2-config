@@ -1,0 +1,115 @@
+# OS: Windows
+# show espanso's power
+
+matches:
+  # demo: random
+  - trigger: ";rolldice"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: random
+        params:
+          choices:
+            - 1️⃣
+            - 2️⃣
+            - 3️⃣
+            - 4️⃣
+            - 5️⃣
+            - 6️⃣
+
+  # demo: random
+  - trigger: ";greet"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: random
+        params:
+          choices:
+            - Hello.
+            - Yes?
+            - Greetings.
+            - Good to see you!
+            - Stay awhile and listen...
+            - Never Forget...
+            - Good Morning!
+            - Good day!
+            - Good Evening!
+
+  # demo: choice
+  - trigger: ";emoticon"
+    form: "[[emoticons]]"
+    form_fields:
+      emoticons:
+        type: choice
+        values:
+          - "¯\\\\_(ツ)_/¯"
+          - (╯°□°）╯︵ ┻━┻
+          - ( ͡ಠ ʖ̯ ͡ಠ)
+          - ☉ ‿ ⚆
+          - ʕ•ᴥ•ʔ: ~
+          - ⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆
+          - ◤◢◣◥◤◢◣◥
+          - (づᵔ◡ᵔ)づ
+          - "|ᵔ‿ᵔ|"
+          - ⤜(*﹏*)⤏
+
+  # demo: regular expression
+  # e.g., ;greet(John)
+  - regex: ":greet\\((?P<person>.*)\\)"
+    replace: "Hi {{person}}!"
+
+  # demo: form
+  - trigger: ";celebrate"
+    form: |
+      Hey [[name]],
+      [[text]]
+      Happy Birthday!
+    form_fields:
+      text:
+        multiline: true
+
+  # demo: form and list
+  - trigger: ";form"
+    replace: "Hey {{form1.name}}, how are you? Do you like {{form1.fruit}}?"
+    vars:
+      - name: form1
+        type: form
+        params:
+          layout: |-
+            Name: [[name]]
+            Fruit: [[fruit]]
+          fields:
+            name:
+              multiline: true
+            fruit:
+              type: list
+              values:
+                - Apples
+                - Bananas
+                - Oranges
+                - Peaches
+
+  # demo: image
+  - trigger: ";image"
+    image_path: "C:\\Windows\\System32\\@WLOGO_48x48.png"
+
+  # demo: nested trigger
+  - trigger: ";nested"
+    replace: "This is a {{output}} match"
+    vars:
+      - name: output
+        type: match
+        params:
+          trigger: ";time"
+
+  # demo: python script
+  - trigger: ";py"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - "py"
+            - "-3.7"
+            - "E:\\Documents\\Code\\ToolScripts\\測試用程式\\testIterSpeed.py"
