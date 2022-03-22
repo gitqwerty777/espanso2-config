@@ -31,6 +31,28 @@ matches:
     replace: 🎲
   - trigger: ";;slot"
     replace: 🎰
+  - trigger: ";;star"
+    replace: ⭐
+  - trigger: ";;curry"
+    replace: 🍛
+  - trigger: ";;salt"
+    replace: 🧂
+  - trigger: ";;time"
+    replace: ⌛
+  - trigger: ";;lock"
+    replace: 🔒
+  - trigger: ";;greenc"
+    replace: ✅
+  - trigger: ";;greenx"
+    replace: ❎
+  - trigger: ";;wtf"
+    replace: 🤯
+  - trigger: ";;tech"
+    replace: 🧑‍💻
+  - trigger: ";;owl"
+    replace: 🦉
+  - trigger: ";;tree"
+    replace: 🌲
   - trigger: ";;tw"
     replace: 🇹🇼
   - trigger: ";;example-emoticon"
