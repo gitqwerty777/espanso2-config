@@ -51,12 +51,12 @@ matches:
   #  failed: preferred
 
   # Capitalize some terms
-  - trigger: "linux"
-    replace: "Linux"
-  - trigger: "youtube"
+  - trigger: "yt"
     replace: "Youtube"
   - trigger: "ibm"
     replace: "IBM"
+  - trigger: "markdown"
+    replace: "Markdown"
 
   # scripts
   - trigger: ";ip"

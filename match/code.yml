@@ -1,5 +1,15 @@
 matches:
   # Markdown
+  - trigger: ";h2"
+    replace: "## "
+  - trigger: ";h3"
+    replace: "### "
+  - trigger: ";h4"
+    replace: "#### "
+  - trigger: ";h5"
+    replace: "##### "
+  - trigger: ";h6"
+    replace: "###### "
   - trigger: ";mdheader"
     replace: |
       title:
