@@ -21,8 +21,6 @@ matches:
     replace: ❓
   - trigger: ";;!"
     replace: ❗
-  - trigger: ";;feat"
-    replace: 🪶
   - trigger: ";;knife"
     replace: 🔪
   - trigger: ";;bug"
@@ -31,6 +29,24 @@ matches:
     replace: 🎲
   - trigger: ";;slot"
     replace: 🎰
+  - trigger: ";;tw"
+    replace: 🇹🇼
+  - trigger: ";;feat"
+    replace: 🚀
+  - trigger: ";;fix"
+    replace: 🔧
+  - trigger: ";;water"
+    replace: 💧
+  - trigger: ";;idea"
+    replace: 💡
+  - trigger: ";;thun"
+    replace: ⚡
+  - trigger: ";;ball"
+    replace: 🎱
+  - trigger: ";;warn"
+    replace: 🚨
+  - trigger: ";;fire"
+    replace: 🔥
   - trigger: ";;star"
     replace: ⭐
   - trigger: ";;curry"
@@ -53,7 +69,21 @@ matches:
     replace: 🦉
   - trigger: ";;tree"
     replace: 🌲
-  - trigger: ";;tw"
-    replace: 🇹🇼
+  - trigger: ";;magic"
+    replace: 🪄
+  - trigger: ";;wizard"
+    replace: 🧙🏽‍♂️
+  - trigger: ";;1"
+    replace: 1️⃣
+  - trigger: ";;2"
+    replace: 2️⃣
+  - trigger: ";;3"
+    replace: 3️⃣
+  - trigger: ";;4"
+    replace: 4️⃣
+  - trigger: ";;5"
+    replace: 5️⃣
+  - trigger: ";;6"
+    replace: 6️⃣
   - trigger: ";;example-emoticon"
     replace: σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ

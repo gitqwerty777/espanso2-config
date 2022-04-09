@@ -38,7 +38,7 @@ matches:
   - trigger: ";mntur"
     replace: "{{nturEmail}}"
 
-  - trigger: ";mail"
+  - trigger: ";mailtemplate"
     form: "
       Dear [[name]],\n
       $|$\n

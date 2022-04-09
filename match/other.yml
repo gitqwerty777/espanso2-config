@@ -88,3 +88,17 @@ matches:
         type: shell
         params:
           cmd: "ii (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path"
+
+  - trigger: ";rolldice"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: random
+        params:
+          choices:
+            - 1️⃣
+            - 2️⃣
+            - 3️⃣
+            - 4️⃣
+            - 5️⃣
+            - 6️⃣

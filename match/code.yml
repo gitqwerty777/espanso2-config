@@ -75,3 +75,19 @@ matches:
         type: clipboard
   - trigger: ";<i"
     replace: "<img src='$|$' />"
+
+  # general
+  - trigger: ";td"
+    replace: "TODO: "
+  - trigger: ";fm"
+    replace: "FIXME: "
+  - trigger: ";bu"
+    replace: "BUG: "
+  - trigger: ";ftd"
+    replace: "FURTHER TODO: "
+  - trigger: ";qk"
+    replace: "QUICK: "
+  - trigger: ";---"
+    replace: "------------------------------------"
+  - trigger: ";==="
+    replace: "===================================="
