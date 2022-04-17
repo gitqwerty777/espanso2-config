@@ -25,6 +25,8 @@ matches:
     replace: git add -i
   - trigger: ";gb"
     replace: git branch
+  - trigger: ";gc"
+    replace: git commit -m ""
   - trigger: ";gca"
     replace: git commit --amend
 
@@ -51,8 +53,6 @@ matches:
   #  failed: preferred
 
   # Capitalize some terms
-  - trigger: "yt"
-    replace: "Youtube"
   - trigger: "ibm"
     replace: "IBM"
   - trigger: "markdown"

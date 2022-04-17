@@ -1,54 +1,61 @@
-# two prefix to prevent collision
+# use two prefix to prevent collision
+# if the symbol is ?, it's the unsupported emoji for your platform
 
 matches:
-  - trigger: ";;x"
-    replace: ❌
-  - trigger: ";;check"
-    replace: ✔️
-  - trigger: ";;o"
-    replace: ⭕
-  - trigger: ";;-"
-    replace: ➖
-  - trigger: ";;arrow"
-    replace: ▶️
-  - trigger: ";;pill"
-    replace: 💊
-  - trigger: ";;th"
-    replace: 🤔
+  # metrics
   - trigger: ";;2o"
     replace: 🎯
+  # or use this: ◎
+  - trigger: ";;o"
+    replace: ⭕
+  - trigger: ";;check"
+    replace: ✔️
+  - trigger: ";;-"
+    replace: ➖
+  - trigger: ";;x"
+    replace: ❌
+  # emotion
   - trigger: ";;?"
     replace: ❓
   - trigger: ";;!"
     replace: ❗
-  - trigger: ";;knife"
-    replace: 🔪
-  - trigger: ";;bug"
-    replace: 🐛
-  - trigger: ";;dice"
-    replace: 🎲
-  - trigger: ";;slot"
-    replace: 🎰
-  - trigger: ";;tw"
-    replace: 🇹🇼
+  - trigger: ";;wtf"
+    replace: 🤯
+  - trigger: ";;th"
+    replace: 🤔
+  # often used in commit message and github
   - trigger: ";;feat"
     replace: 🚀
   - trigger: ";;fix"
     replace: 🔧
-  - trigger: ";;water"
-    replace: 💧
+  - trigger: ";;bug"
+    replace: 🐛
+  - trigger: ";;star"
+    replace: ⭐
+  - trigger: ";;fire"
+    replace: 🔥
   - trigger: ";;idea"
     replace: 💡
   - trigger: ";;thun"
     replace: ⚡
-  - trigger: ";;ball"
-    replace: 🎱
+  - trigger: ";;gear"
+    replace: ⚙️
+  # bootstrap like
+  - trigger: ";;info"
+    replace: 🟦
+  - trigger: ";;success"
+    replace: ✅
   - trigger: ";;warn"
-    replace: 🚨
-  - trigger: ";;fire"
-    replace: 🔥
-  - trigger: ";;star"
-    replace: ⭐
+    replace: ⚠
+  - trigger: ";;danger"
+    replace: 🛑
+  # my favorite
+  - trigger: ";;dice"
+    replace: 🎲
+  - trigger: ";;slot"
+    replace: 🎰
+  - trigger: ";;pill"
+    replace: 💊
   - trigger: ";;curry"
     replace: 🍛
   - trigger: ";;salt"
@@ -57,22 +64,29 @@ matches:
     replace: ⌛
   - trigger: ";;lock"
     replace: 🔒
-  - trigger: ";;greenc"
-    replace: ✅
-  - trigger: ";;greenx"
-    replace: ❎
-  - trigger: ";;wtf"
-    replace: 🤯
-  - trigger: ";;tech"
-    replace: 🧑‍💻
-  - trigger: ";;owl"
-    replace: 🦉
+  - trigger: ";;knife"
+    replace: 🔪
+  - trigger: ";;water"
+    replace: 💧
+  - trigger: ";;ball"
+    replace: 🎱
+  - trigger: ";;siren"
+    replace: 🚨
   - trigger: ";;tree"
     replace: 🌲
   - trigger: ";;magic"
     replace: 🪄
   - trigger: ";;wizard"
     replace: 🧙🏽‍♂️
+  - trigger: ";;stonkp"
+    replace: 📈
+  - trigger: ";;stonkn"
+    replace: 📉
+  - trigger: ";;copy"
+    replace: 📎
+  - trigger: ";;wheel"
+    replace: 🛞
+  # number
   - trigger: ";;1"
     replace: 1️⃣
   - trigger: ";;2"
@@ -85,5 +99,21 @@ matches:
     replace: 5️⃣
   - trigger: ";;6"
     replace: 6️⃣
+  # others
+  - trigger: ";;arrow"
+    replace: ▶️
+  - trigger: ";;greenx"
+    replace: ❎
+  - trigger: ";;tech"
+    replace: 🧑‍💻
+  - trigger: ";;owl"
+    replace: 🦉
+  - trigger: ";;money"
+    replace: 💸
+  - trigger: ";;cash"
+    replace: 💰
+  - trigger: ";;tw"
+    replace: 🇹🇼
+
   - trigger: ";;example-emoticon"
     replace: σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ
