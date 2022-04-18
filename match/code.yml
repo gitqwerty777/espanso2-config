@@ -59,14 +59,15 @@ matches:
         type: clipboard
   - trigger: ";mdtemplate"
     replace: "
-      ## 簡介\n
-      ## 方法\n
-      ## 實作\n
-      ## 總結\n
+      ## 簡介\n\n
+      ## 方法\n\n
+      ## 實作\n\n
+      ## 總結\n\n
       ## 參考資料\n
     "
   - trigger: ";ref"
     replace: "## 參考資料"
+
   # html
   - trigger: ";<a"
     replace: "<a href='{{clipboard}}' />$|$</a>"
@@ -91,3 +92,13 @@ matches:
     replace: "------------------------------------"
   - trigger: ";==="
     replace: "===================================="
+
+  # alias
+  - trigger: ";gco"
+    replace: git checkout
+  - trigger: ";ga"
+    replace: git add -i
+  - trigger: ";gb"
+    replace: git branch
+  - trigger: ";gca"
+    replace: git commit --amend

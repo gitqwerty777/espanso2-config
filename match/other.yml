@@ -10,25 +10,13 @@ matches:
   - trigger: ";date"
     replace: "{{datetime}}"
 
-  # quickjump
+  # bookmark
   - trigger: ";blogcode"
     replace: "https://gitqwerty777.github.io/"
   - trigger: ";bloglife"
     replace: "https://qwerty777.me/life/"
   - trigger: ";homepage"
     replace: "https://qwerty777.me"
-
-  # alias
-  - trigger: ";gco"
-    replace: git checkout
-  - trigger: ";ga"
-    replace: git add -i
-  - trigger: ";gb"
-    replace: git branch
-  - trigger: ";gc"
-    replace: git commit -m ""
-  - trigger: ";gca"
-    replace: git commit --amend
 
   # Frequenly mistyped word, no need prefix
   - trigger: 因該
@@ -53,6 +41,10 @@ matches:
   #  failed: preferred
 
   # Capitalize some terms
+  - trigger: "yt;"
+    replace: "YouTube"
+  - trigger: "env;"
+    replace: "environment"
   - trigger: "ibm"
     replace: "IBM"
   - trigger: "markdown"
@@ -88,7 +80,6 @@ matches:
         type: shell
         params:
           cmd: "ii (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path"
-
   - trigger: ";rolldice"
     replace: "{{output}}"
     vars:
