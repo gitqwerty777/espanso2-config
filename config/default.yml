@@ -4,6 +4,6 @@
 undo_backspace: false
 show_notifications: true
 
-search_shortcut: "ALT+SPACE"
+search_shortcut: "ALT+E"
 toggle_key: RIGHT_ALT
-search_trigger: ":search"
+search_trigger: "esp:"

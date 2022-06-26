@@ -52,6 +52,9 @@ matches:
         type: clipboard
   - trigger: ";img"
     replace: "![](/img/$|$.png)"
+  # possible class: img-small(25)/regular(62)/normal(50)/medium(75)
+  - trigger: ";2img"
+    replace: "{% img img-regular /img/.png '\"title\" \"alt\"' %}"
   - trigger: ";pimg"
     replace: "![$|$]({{clipboard}})"
     vars:
@@ -59,7 +62,7 @@ matches:
         type: clipboard
   - trigger: ";mdtemplate"
     replace: "
-      ## 簡介\n\n
+     ## 簡介\n\n
       ## 方法\n\n
       ## 實作\n\n
       ## 總結\n\n
@@ -67,7 +70,6 @@ matches:
     "
   - trigger: ";ref"
     replace: "## 參考資料"
-
   # html
   - trigger: ";<a"
     replace: "<a href='{{clipboard}}' />$|$</a>"
@@ -78,16 +80,26 @@ matches:
     replace: "<img src='$|$' />"
 
   # general
-  - trigger: ";td"
+  - trigger: ";td;"
     replace: "TODO: "
-  - trigger: ";fm"
-    replace: "FIXME: "
-  - trigger: ";bu"
-    replace: "BUG: "
-  - trigger: ";ftd"
-    replace: "FURTHER TODO: "
-  - trigger: ";qk"
+  - trigger: ";w;"
+    replace: "WAIT: "
+  - trigger: ";q;"
     replace: "QUICK: "
+  - trigger: ";b;"
+    replace: "BUG: "
+  - trigger: ";te;"
+    replace: "TEST: "
+  - trigger: ";cp;"
+    replace: "COMPLETE: "
+  - trigger: ";fur;"
+    replace: "FURTHER: "
+  - trigger: ";fm;"
+    replace: "FIXME: "
+  - trigger: ";ha;"
+    replace: "HACK: "
+  - trigger: ";xxx;"
+    replace: "XXX: "
   - trigger: ";---"
     replace: "------------------------------------"
   - trigger: ";==="

@@ -1,119 +1,179 @@
-# use two prefix to prevent collision
-# if the symbol is ?, it's the unsupported emoji for your platform
+# use prefix and suffix to prevent collision
+# if the symbol cannot be shown, it is not supported emoji of your platform/font
+# ref: https://home.unicode.org/emoji/emoji-frequency/
+# http://xahlee.info/comp/unicode_frequency.html
+# https://www.researchgate.net/figure/Emoji-Co-Occurrence-Frequency-Graph_fig1_318017922
 
 matches:
   # metrics
-  - trigger: ";;2o"
+  - trigger: ";oo;"
     replace: 🎯
   # or use this: ◎
-  - trigger: ";;o"
+  - trigger: ";o;"
     replace: ⭕
-  - trigger: ";;check"
+  - trigger: ";check;"
     replace: ✔️
-  - trigger: ";;-"
+  - trigger: ";-;"
     replace: ➖
-  - trigger: ";;x"
+  - trigger: ";x;"
     replace: ❌
   # emotion
-  - trigger: ";;?"
+  - trigger: ";?;"
     replace: ❓
-  - trigger: ";;!"
+  - trigger: ";!;"
     replace: ❗
-  - trigger: ";;wtf"
+  - trigger: ";wtf;"
     replace: 🤯
-  - trigger: ";;th"
+  - trigger: ";th;"
     replace: 🤔
+  - trigger: ";0.0;"
+    replace: 👀
   # often used in commit message and github
-  - trigger: ";;feat"
+  - trigger: ";feat;"
     replace: 🚀
-  - trigger: ";;fix"
+  - trigger: ";fix;"
     replace: 🔧
-  - trigger: ";;bug"
+  - trigger: ";bug;"
     replace: 🐛
-  - trigger: ";;star"
+  - trigger: ";star;"
     replace: ⭐
-  - trigger: ";;fire"
+  - trigger: ";fire;"
     replace: 🔥
-  - trigger: ";;idea"
+  - trigger: ";idea;"
     replace: 💡
-  - trigger: ";;thun"
+  - trigger: ";thun;"
     replace: ⚡
-  - trigger: ";;gear"
+  - trigger: ";gear;"
     replace: ⚙️
-  # bootstrap like
-  - trigger: ";;info"
+  # semantic icon
+  - trigger: ";info;"
     replace: 🟦
-  - trigger: ";;success"
+  - trigger: ";success;"
     replace: ✅
-  - trigger: ";;warn"
+  - trigger: ";warn;"
     replace: ⚠
-  - trigger: ";;danger"
+  - trigger: ";danger;"
     replace: 🛑
   # my favorite
-  - trigger: ";;dice"
+  - trigger: ";dice;"
     replace: 🎲
-  - trigger: ";;slot"
+  - trigger: ";slot;"
     replace: 🎰
-  - trigger: ";;pill"
+  - trigger: ";pill;"
     replace: 💊
-  - trigger: ";;curry"
+  - trigger: ";curry;"
     replace: 🍛
-  - trigger: ";;salt"
+  - trigger: ";salt;"
     replace: 🧂
-  - trigger: ";;time"
+  - trigger: ";time;"
     replace: ⌛
-  - trigger: ";;lock"
+  - trigger: ";lock;"
     replace: 🔒
-  - trigger: ";;knife"
+  - trigger: ";knife;"
     replace: 🔪
-  - trigger: ";;water"
+  - trigger: ";water;"
     replace: 💧
-  - trigger: ";;ball"
+  - trigger: ";ball;"
     replace: 🎱
-  - trigger: ";;siren"
+  - trigger: ";siren;"
     replace: 🚨
-  - trigger: ";;tree"
+  - trigger: ";tree;"
     replace: 🌲
-  - trigger: ";;magic"
+  - trigger: ";magic;"
     replace: 🪄
-  - trigger: ";;wizard"
+  - trigger: ";wizard;"
     replace: 🧙🏽‍♂️
-  - trigger: ";;stonkp"
+  - trigger: ";stonkp;"
     replace: 📈
-  - trigger: ";;stonkn"
+  - trigger: ";stonkn;"
     replace: 📉
-  - trigger: ";;copy"
+  - trigger: ";copy;"
     replace: 📎
-  - trigger: ";;wheel"
+  - trigger: ";wheel;"
     replace: 🛞
+  - trigger: ";save;"
+    replace: 💾
+  # symbols
+  - trigger: ";cycle;"
+    replace: 🔄
+  - trigger: ";back;"
+    replace: 🔙
+  - trigger: ";soon;"
+    replace: 🔜
+  - trigger: ";top;"
+    replace: 🔝
+  - trigger: ";pause;"
+    replace: ⏸️
+  - trigger: ";stop;"
+    replace: ⏹️
+  - trigger: ";atom;"
+    replace: ⚛️
+  - trigger: ";key;"
+    replace: 🆘
+  - trigger: ";key;"
+    replace: 🆗
+  - trigger: ";key;"
+    replace: 🆓
+  - trigger: ";key;"
+    replace: 🆖
+  - trigger: ";key;"
+    replace: 🉑
+  - trigger: ";key;"
+    replace: 🆕
+  - trigger: ";key;"
+    replace: 🆚
+  - trigger: ";key;"
+    replace: 🆒
   # number
-  - trigger: ";;1"
+  - trigger: ";0;"
+    replace: 0️⃣
+  - trigger: ";1;"
     replace: 1️⃣
-  - trigger: ";;2"
+  - trigger: ";2;"
     replace: 2️⃣
-  - trigger: ";;3"
+  - trigger: ";3;"
     replace: 3️⃣
-  - trigger: ";;4"
+  - trigger: ";4;"
     replace: 4️⃣
-  - trigger: ";;5"
+  - trigger: ";5;"
     replace: 5️⃣
-  - trigger: ";;6"
+  - trigger: ";6;"
     replace: 6️⃣
+  - trigger: ";inf;"
+    replace: ♾️
   # others
-  - trigger: ";;arrow"
+  - trigger: ";arrow;"
     replace: ▶️
-  - trigger: ";;greenx"
+  - trigger: ";greenx;"
     replace: ❎
-  - trigger: ";;tech"
+  - trigger: ";tech;"
     replace: 🧑‍💻
-  - trigger: ";;owl"
+  - trigger: ";owl;"
     replace: 🦉
-  - trigger: ";;money"
+  - trigger: ";money;"
     replace: 💸
-  - trigger: ";;cash"
+  - trigger: ";cash;"
     replace: 💰
-  - trigger: ";;tw"
+  - trigger: ";saber;"
+    replace: 🗡️
+  - trigger: ";sword;"
+    replace: ⚔️
+  - trigger: ";key;"
+    replace: 🔑
+  - trigger: ";music;"
+    replace: 🎼
+  - trigger: ";phone;"
+    replace: 📞
+  - trigger: ";tag;"
+    replace: 🏷️
+  - trigger: ";dna;"
+    replace: 🧬
+  - trigger: ";flower;"
+    replace: 🌷
+  - trigger: ";currency;"
+    replace: 💲
+  - trigger: ";tw;"
     replace: 🇹🇼
 
-  - trigger: ";;example-emoticon"
+  - trigger: ";example-emoticon;"
     replace: σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ
