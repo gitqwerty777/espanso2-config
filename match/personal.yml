@@ -37,6 +37,10 @@ matches:
     replace: "{{ntubEmail}}"
   - trigger: ";mntur"
     replace: "{{nturEmail}}"
+  - trigger: ";receipt"
+    replace: "{{receiptCode}}"
+  - trigger: ";birth"
+    replace: "{{birthDay}}"
 
   - trigger: ";mailtemplate"
     form: "
