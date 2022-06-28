@@ -37,6 +37,7 @@ matches:
     replace: "{{ntubEmail}}"
   - trigger: ";mntur"
     replace: "{{nturEmail}}"
+  # 發票條碼
   - trigger: ";receipt"
     replace: "{{receiptCode}}"
   - trigger: ";birth"

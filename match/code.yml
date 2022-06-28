@@ -106,11 +106,18 @@ matches:
     replace: "===================================="
 
   # alias
-  - trigger: ";gco"
+  - trigger: "gco;"
     replace: git checkout
-  - trigger: ";ga"
+  - trigger: "ga;"
     replace: git add -i
-  - trigger: ";gb"
+  - trigger: "gb;"
     replace: git branch
-  - trigger: ";gca"
+  - trigger: "gca;"
     replace: git commit --amend
+  - trigger: "ls;"
+    replace: "ls -rlth "
+  - trigger: "rsync;"
+    replace: "rsync -avz "
+  - trigger: "scp;"
+    replace: "scp -rpvC "
+  
