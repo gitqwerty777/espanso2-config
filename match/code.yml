@@ -70,15 +70,33 @@ matches:
     "
   - trigger: ";ref"
     replace: "## 參考資料"
-  # html
-  - trigger: ";<a"
+
+  # html tags
+  - trigger: ";<a>"
     replace: "<a href='{{clipboard}}' />$|$</a>"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";<i"
-    replace: "<img src='$|$' />"
-
+  - trigger: ";<i>"
+    replace: "<img src='$|$'></img>"
+  - trigger: ";<detail>"
+    replace: "<details>\n<summary>$|$show</summary>\nhide\n</details>"
+  - trigger: ";<abbr>"
+    replace: "<abbr title=\"\"></abbr>" 
+  - trigger: ";<v>"
+    replace: "<video controls width=\"250\">\n<source src=\"/media/cc0-videos/flower.webm\" type=\"video/webm\"> <source src=\"/media/cc0-videos/flower.mp4\" type=\"video/mp4\"> Sorry, your browser doesn't support embedded videos. </video>"
+  - trigger: ";<ruby>"
+    replace: "<ruby>\n<rb>漢<rb>字\n<rp>(</rp><rt>kan<rt>ji<rp>)</rp>\n</ruby>"
+  - trigger: ";<progress>"
+    replace: "<progress value=\"67\" max=\"100\"></progress>"
+  # Shadow DOM它允許在文檔（document）渲染時插入一棵DOM元素子樹，但是這棵子樹不在主DOM樹中。
+  # 因此開發者可利用Shadow DOM 封裝自己的 HTML 標簽、CSS 樣式和 JavaScript 代碼。
+  - trigger: ";<shadow>"
+    replace: ""
+  - trigger: ";<datalist>"
+    replace: "<datalist id=\"ice-cream-flavors\"><option value=\"Chocolate\"></datalist>"
+  - trigger: ";<dialog>"
+    replace: "<dialog open>This is an open dialog window</dialog>"
   # general
   - trigger: ";td;"
     replace: "TODO: "
@@ -120,4 +138,3 @@ matches:
     replace: "rsync -avz "
   - trigger: "scp;"
     replace: "scp -rpvC "
-  

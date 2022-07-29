@@ -28,6 +28,10 @@ matches:
     replace: 🤔
   - trigger: ";0.0;"
     replace: 👀
+  - trigger: ";cry;"
+    replace: "😢"
+  - trigger: ";sob;"
+    replace: "😭"
   # often used in commit message and github
   - trigger: ";feat;"
     replace: 🚀
@@ -108,21 +112,21 @@ matches:
     replace: ⏹️
   - trigger: ";atom;"
     replace: ⚛️
-  - trigger: ";key;"
+  - trigger: ";sos;"
     replace: 🆘
-  - trigger: ";key;"
+  - trigger: ";ok;"
     replace: 🆗
-  - trigger: ";key;"
+  - trigger: ";free;"
     replace: 🆓
-  - trigger: ";key;"
+  - trigger: ";ng;"
     replace: 🆖
-  - trigger: ";key;"
+  - trigger: ";can;"
     replace: 🉑
-  - trigger: ";key;"
+  - trigger: ";new;"
     replace: 🆕
-  - trigger: ";key;"
+  - trigger: ";vs;"
     replace: 🆚
-  - trigger: ";key;"
+  - trigger: ";cool;"
     replace: 🆒
   # number
   - trigger: ";0;"
