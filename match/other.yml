@@ -39,16 +39,25 @@ matches:
   #- trigger: "err"
   #  replace: "error"
   #  failed: preferred
+  - trigger: "env;"
+    replace: "environment"
 
   # Capitalize some terms
   - trigger: "yt;"
     replace: "YouTube"
-  - trigger: "env;"
-    replace: "environment"
-  - trigger: "ibm"
+  - trigger: "ibm;"
     replace: "IBM"
-  - trigger: "markdown"
-    replace: "Markdown"
+  # rating
+  - trigger: ";1s"
+    replace: "☆☆☆☆★"
+  - trigger: ";2s"
+    replace: "☆☆☆★★"
+  - trigger: ";3s"
+    replace: "☆☆★★★"
+  - trigger: ";4s"
+    replace: "☆★★★★"
+  - trigger: ";5s"
+    replace: "★★★★★"
 
   # scripts
   - trigger: ";ip"

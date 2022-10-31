@@ -70,6 +70,8 @@ matches:
     "
   - trigger: ";ref"
     replace: "## 參考資料"
+  - trigger: ";;ref"
+    replace: "※"
 
   # html tags
   - trigger: ";<a>"
@@ -97,7 +99,9 @@ matches:
     replace: "<datalist id=\"ice-cream-flavors\"><option value=\"Chocolate\"></datalist>"
   - trigger: ";<dialog>"
     replace: "<dialog open>This is an open dialog window</dialog>"
-  # general
+  - trigger: ";yt"
+    replace: '<iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+  # general tags
   - trigger: ";td;"
     replace: "TODO: "
   - trigger: ";w;"
@@ -118,10 +122,12 @@ matches:
     replace: "HACK: "
   - trigger: ";xxx;"
     replace: "XXX: "
-  - trigger: ";---"
+  - trigger: ";div1"
     replace: "------------------------------------"
-  - trigger: ";==="
+  - trigger: ";div2"
     replace: "===================================="
+  - trigger: ";divhtml"
+    replace: "<hr />"
 
   # alias
   - trigger: "gco;"

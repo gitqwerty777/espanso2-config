@@ -32,6 +32,14 @@ matches:
     replace: "😢"
   - trigger: ";sob;"
     replace: "😭"
+  - trigger: ";>_<;"
+    replace: "😣"
+  - trigger: ";laugh;"
+    replace: "😀"
+  - trigger: ";lol;"
+    replace: "😝"
+  - trigger: ";wow;"
+    replace: "😮"
   # often used in commit message and github
   - trigger: ";feat;"
     replace: 🚀
@@ -58,7 +66,7 @@ matches:
     replace: ⚠
   - trigger: ";danger;"
     replace: 🛑
-  # my favorite
+  # my favorites
   - trigger: ";dice;"
     replace: 🎲
   - trigger: ";slot;"
@@ -91,14 +99,14 @@ matches:
     replace: 📈
   - trigger: ";stonkn;"
     replace: 📉
-  - trigger: ";copy;"
+  - trigger: ";clip;"
     replace: 📎
   - trigger: ";wheel;"
     replace: 🛞
   - trigger: ";save;"
     replace: 💾
   # symbols
-  - trigger: ";cycle;"
+  - trigger: ";end;"
     replace: 🔄
   - trigger: ";back;"
     replace: 🔙
@@ -129,26 +137,28 @@ matches:
   - trigger: ";cool;"
     replace: 🆒
   # number
-  - trigger: ";0;"
+  - trigger: ";;0"
     replace: 0️⃣
-  - trigger: ";1;"
+  - trigger: ";;1"
     replace: 1️⃣
-  - trigger: ";2;"
+  - trigger: ";;2"
     replace: 2️⃣
-  - trigger: ";3;"
+  - trigger: ";;3"
     replace: 3️⃣
-  - trigger: ";4;"
+  - trigger: ";;4"
     replace: 4️⃣
-  - trigger: ";5;"
+  - trigger: ";;5"
     replace: 5️⃣
-  - trigger: ";6;"
+  - trigger: ";;6"
     replace: 6️⃣
-  - trigger: ";inf;"
+  - trigger: ";;inf"
     replace: ♾️
   # others
-  - trigger: ";arrow;"
+  - trigger: ";congrat;"
+    replace: 🎉
+  - trigger: ";play;"
     replace: ▶️
-  - trigger: ";greenx;"
+  - trigger: ";xgreen;"
     replace: ❎
   - trigger: ";tech;"
     replace: 🧑‍💻
@@ -178,6 +188,7 @@ matches:
     replace: 💲
   - trigger: ";tw;"
     replace: 🇹🇼
-
-  - trigger: ";example-emoticon;"
-    replace: σ ﾟ∀ ﾟ) ﾟ∀ﾟ)σ
+  # emoticon
+  - trigger: ";confuse;"
+    replace: ヽ( ﾟ ∀ 。)ノ
+  # ^_^
