@@ -13,14 +13,18 @@ matches:
     replace: ⭕
   - trigger: ";check;"
     replace: ✔️
-  - trigger: ";-;"
+  - trigger: ";e;"
     replace: ➖
+  - trigger: ";-;"
+    replace: ➖    
   - trigger: ";x;"
     replace: ❌
+  - trigger: ";na;"
+    replace: 🈚
   # emotion
-  - trigger: ";?;"
+  - trigger: ";s;"
     replace: ❓
-  - trigger: ";!;"
+  - trigger: ";v;"
     replace: ❗
   - trigger: ";wtf;"
     replace: 🤯
@@ -188,6 +192,8 @@ matches:
     replace: 💲
   - trigger: ";tw;"
     replace: 🇹🇼
+  - trigger: ";nsfw;"
+    replace: 🔞
   # emoticon
   - trigger: ";confuse;"
     replace: ヽ( ﾟ ∀ 。)ノ

@@ -25,8 +25,8 @@ matches:
       categories:
       tags: []
       description:
-      top_img: ./img/
-      cover: ./img/
+      top_img: ./img/default.svg
+      cover: ./img/default.svg
       ---
   - trigger: ";code"
     replace: |-
