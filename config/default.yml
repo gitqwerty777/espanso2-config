@@ -4,6 +4,7 @@
 undo_backspace: false
 show_notifications: true
 
-search_shortcut: "ALT+E"
-toggle_key: RIGHT_ALT
+search_shortcut: "CTRL+F6"
+toggle_key: OFF
 search_trigger: "esp:"
+

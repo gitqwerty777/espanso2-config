@@ -16,7 +16,7 @@ matches:
       date: {{datetime}}
       categories:
       tags: []
-      description:
+      description: 「繼續閱讀」
       ---
   - trigger: ";md2header"
     replace: |
@@ -24,7 +24,7 @@ matches:
       date: {{datetime}}
       categories:
       tags: []
-      description:
+      description: 「繼續閱讀」
       top_img: ./img/default.svg
       cover: ./img/default.svg
       ---
@@ -50,8 +50,12 @@ matches:
     vars:
       - name: clipboard
         type: clipboard
+  - trigger: ";quote"
+    replace: "{% blockquote author, source %}$|$\n{% endblockquote %}"
   - trigger: ";img"
     replace: "![](/img/$|$.png)"
+  - trigger: ";limg"
+    replace: "![](/lifeblog/img/$|$)"
   # possible class: img-small(25)/regular(62)/normal(50)/medium(75)
   - trigger: ";2img"
     replace: "{% img img-regular /img/.png '\"title\" \"alt\"' %}"
