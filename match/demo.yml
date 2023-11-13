@@ -3,7 +3,7 @@
 
 matches:
   # demo: random
-  - trigger: ";rolldice"
+  - trigger: ";rolldice;"
     replace: "{{output}}"
     vars:
       - name: output
@@ -18,7 +18,7 @@ matches:
             - 6️⃣
 
   # demo: random
-  - trigger: ";greet"
+  - trigger: ";greet;"
     replace: "{{output}}"
     vars:
       - name: output
@@ -36,7 +36,7 @@ matches:
             - Good Evening!
 
   # demo: choice
-  - trigger: ";emoticon"
+  - trigger: ";emoticon;"
     form: "[[emoticons]]"
     form_fields:
       emoticons:
@@ -59,7 +59,7 @@ matches:
     replace: "Hi {{person}}!"
 
   # demo: form
-  - trigger: ";celebrate"
+  - trigger: ";celebrate;"
     form: |
       Hey [[name]],
       [[text]]
@@ -69,7 +69,7 @@ matches:
         multiline: true
 
   # demo: form and list
-  - trigger: ";form"
+  - trigger: ";form;"
     replace: "Hey {{form1.name}}, how are you? Do you like {{form1.fruit}}?"
     vars:
       - name: form1
@@ -90,20 +90,20 @@ matches:
                 - Peaches
 
   # demo: image
-  - trigger: ";image"
+  - trigger: ";image;"
     image_path: "C:\\Windows\\System32\\@WLOGO_48x48.png"
 
   # demo: nested trigger
-  - trigger: ";nested"
+  - trigger: ";nested;"
     replace: "This is a {{output}} match"
     vars:
       - name: output
         type: match
         params:
-          trigger: ";time"
+          trigger: ";time;"
 
   # demo: python script
-  - trigger: ";py"
+  - trigger: ";py;"
     replace: "{{output}}"
     vars:
       - name: output

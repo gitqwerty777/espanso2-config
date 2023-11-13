@@ -3,47 +3,47 @@
 
 matches:
   # id card
-  - trigger: ";id"
+  - trigger: ";id;"
     replace: "{{tid}}"
   # most-used account name
-  - trigger: ";acc"
+  - trigger: ";acc;"
     replace: "{{account}}"
   # name
-  - trigger: ";name"
+  - trigger: ";name;"
     replace: "{{cname}}"
   # english name
-  - trigger: ";ename"
+  - trigger: ";ename;"
     replace: "{{ename}}"
-  - trigger: ";phone"
+  - trigger: ";phone;"
     replace: "{{phone}}"
   # global phone number(with country code)
-  - trigger: ";phoneg"
+  - trigger: ";phoneg;"
     replace: "{{phoneg}}"
-  - trigger: ";ad0"
+  - trigger: ";ad0;"
     replace: "{{ad0}}"
-  - trigger: ";ad1"
+  - trigger: ";ad1;"
     replace: "{{ad1}}"
-  - trigger: ";ad2"
+  - trigger: ";ad2;"
     replace: "{{ad2}}"
-  - trigger: ";self-intro"
+  - trigger: ";self-intro;"
     replace: "Hi, I am {{cname}}({{ename}}), you can contact me by calling {{phone}} or send mail to {{mainEmail}}"
-  - trigger: ";mg"
+  - trigger: ";mg;"
     replace: "{{mainEmail}}"
-  - trigger: ";mq"
+  - trigger: ";mq;"
     replace: "{{qEmail}}"
-  - trigger: ";mb"
+  - trigger: ";mb;"
     replace: "{{bEmail}}"
-  - trigger: ";mntub"
+  - trigger: ";mntub;"
     replace: "{{ntubEmail}}"
-  - trigger: ";mntur"
+  - trigger: ";mntur;"
     replace: "{{nturEmail}}"
   # 發票條碼
-  - trigger: ";receipt"
+  - trigger: ";receipt;"
     replace: "{{receiptCode}}"
-  - trigger: ";birth"
+  - trigger: ";birth;"
     replace: "{{birthDay}}"
 
-  - trigger: ";mailtemplate"
+  - trigger: ";mailtemplate;"
     form: "
       Dear [[name]],\n
       $|$\n
@@ -51,7 +51,7 @@ matches:
       {{ename}}\n
       {{date}}"
 
-  - trigger: ";ads"
+  - trigger: ";ads;"
     form: |
       [[addresses]]
     form_fields:
@@ -62,7 +62,7 @@ matches:
           - "{{ad1}}"
           - "{{ad2}}"
 
-  - trigger: ";mails"
+  - trigger: ";mails;"
     form: |
       [[mails]]
     form_fields:

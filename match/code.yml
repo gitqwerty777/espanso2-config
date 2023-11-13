@@ -1,16 +1,16 @@
 matches:
   # Markdown
-  - trigger: ";h2"
+  - trigger: ";h2;"
     replace: "## "
-  - trigger: ";h3"
+  - trigger: ";h3;"
     replace: "### "
-  - trigger: ";h4"
+  - trigger: ";h4;"
     replace: "#### "
-  - trigger: ";h5"
+  - trigger: ";h5;"
     replace: "##### "
-  - trigger: ";h6"
+  - trigger: ";h6;"
     replace: "###### "
-  - trigger: ";mdheader"
+  - trigger: ";mdheader;"
     replace: |
       title:
       date: {{datetime}}
@@ -18,7 +18,7 @@ matches:
       tags: []
       description: 「繼續閱讀」
       ---
-  - trigger: ";md2header"
+  - trigger: ";md2header;"
     replace: |
       title:
       date: {{datetime}}
@@ -28,12 +28,12 @@ matches:
       top_img: ./img/default.svg
       cover: ./img/default.svg
       ---
-  - trigger: ";code"
+  - trigger: ";code;"
     replace: |-
       ```
       $|$
       ```
-  - trigger: ";pcode"
+  - trigger: ";pcode;"
     vars:
       - name: clipboard
         type: clipboard
@@ -41,30 +41,30 @@ matches:
       ```
       {{clipboard}}
       ```
-  - trigger: ";collapse"
+  - trigger: ";collapse;"
     replace: "\n<details>\n\t<summary>$|$</summary>\n\t<p></p>\n</details>"
-  - trigger: ";link"
+  - trigger: ";link;"
     replace: "[]($|$)"
-  - trigger: ";plink"
+  - trigger: ";plink;"
     replace: "[$|$]({{clipboard}})"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";quote"
+  - trigger: ";quote;"
     replace: "{% blockquote author, source %}$|$\n{% endblockquote %}"
-  - trigger: ";img"
+  - trigger: ";img;"
     replace: "![](/img/$|$.png)"
-  - trigger: ";limg"
+  - trigger: ";limg;"
     replace: "![](/lifeblog/img/$|$)"
   # possible class: img-small(25)/regular(62)/normal(50)/medium(75)
-  - trigger: ";2img"
+  - trigger: ";2img;"
     replace: "{% img img-regular /img/.png '\"title\" \"alt\"' %}"
-  - trigger: ";pimg"
+  - trigger: ";pimg;"
     replace: "![$|$]({{clipboard}})"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";mdtemplate"
+  - trigger: ";mdtemplate;"
     replace: "
      ## 簡介\n\n
       ## 方法\n\n
@@ -72,38 +72,38 @@ matches:
       ## 總結\n\n
       ## 參考資料\n
     "
-  - trigger: ";ref"
+  - trigger: ";ref;;"
     replace: "## 參考資料"
-  - trigger: ";;ref"
+  - trigger: ";refs;;"
     replace: "※"
 
   # html tags
-  - trigger: ";<a>"
+  - trigger: ";<a>;"
     replace: "<a href='{{clipboard}}' />$|$</a>"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";<i>"
+  - trigger: ";<i>;"
     replace: "<img src='$|$'></img>"
-  - trigger: ";<detail>"
+  - trigger: ";<detail>;"
     replace: "<details>\n<summary>$|$show</summary>\nhide\n</details>"
-  - trigger: ";<abbr>"
+  - trigger: ";<abbr>;"
     replace: "<abbr title=\"\"></abbr>" 
-  - trigger: ";<v>"
+  - trigger: ";<v>;"
     replace: "<video controls width=\"250\">\n<source src=\"/media/cc0-videos/flower.webm\" type=\"video/webm\"> <source src=\"/media/cc0-videos/flower.mp4\" type=\"video/mp4\"> Sorry, your browser doesn't support embedded videos. </video>"
-  - trigger: ";<ruby>"
+  - trigger: ";<ruby>;"
     replace: "<ruby>\n<rb>漢<rb>字\n<rp>(</rp><rt>kan<rt>ji<rp>)</rp>\n</ruby>"
-  - trigger: ";<progress>"
+  - trigger: ";<progress>;"
     replace: "<progress value=\"67\" max=\"100\"></progress>"
   # Shadow DOM它允許在文檔（document）渲染時插入一棵DOM元素子樹，但是這棵子樹不在主DOM樹中。
   # 因此開發者可利用Shadow DOM 封裝自己的 HTML 標簽、CSS 樣式和 JavaScript 代碼。
-  - trigger: ";<shadow>"
+  - trigger: ";<shadow>;"
     replace: ""
-  - trigger: ";<datalist>"
+  - trigger: ";<datalist>;"
     replace: "<datalist id=\"ice-cream-flavors\"><option value=\"Chocolate\"></datalist>"
-  - trigger: ";<dialog>"
+  - trigger: ";<dialog>;"
     replace: "<dialog open>This is an open dialog window</dialog>"
-  - trigger: ";yt"
+  - trigger: ";yt;"
     replace: '<iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
   # general tags
   - trigger: ";td;"
@@ -126,11 +126,11 @@ matches:
     replace: "HACK: "
   - trigger: ";xxx;"
     replace: "XXX: "
-  - trigger: ";div1"
+  - trigger: ";div1;"
     replace: "------------------------------------"
-  - trigger: ";div2"
+  - trigger: ";div2;"
     replace: "===================================="
-  - trigger: ";divhtml"
+  - trigger: ";divhtml;"
     replace: "<hr />"
 
   # alias

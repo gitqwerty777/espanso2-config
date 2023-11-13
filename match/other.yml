@@ -3,19 +3,19 @@
 
 matches:
   # fact
-  - trigger: ";day"
+  - trigger: ";day;"
     replace: "{{date}}"
-  - trigger: ";time"
+  - trigger: ";time;"
     replace: "{{time}}"
-  - trigger: ";date"
+  - trigger: ";date;"
     replace: "{{datetime}}"
 
   # bookmark
-  - trigger: ";blogcode"
+  - trigger: ";blogcode;"
     replace: "https://gitqwerty777.github.io/"
-  - trigger: ";bloglife"
+  - trigger: ";bloglife;"
     replace: "https://qwerty777.me/life/"
-  - trigger: ";homepage"
+  - trigger: ";homepage;"
     replace: "https://qwerty777.me"
 
   # Frequenly mistyped word, no need prefix
@@ -48,19 +48,19 @@ matches:
   - trigger: "ibm;"
     replace: "IBM"
   # rating
-  - trigger: ";1s"
+  - trigger: ";1s;"
     replace: "☆☆☆☆★"
-  - trigger: ";2s"
+  - trigger: ";2s;"
     replace: "☆☆☆★★"
-  - trigger: ";3s"
+  - trigger: ";3s;"
     replace: "☆☆★★★"
-  - trigger: ";4s"
+  - trigger: ";4s;"
     replace: "☆★★★★"
-  - trigger: ";5s"
+  - trigger: ";5s;"
     replace: "★★★★★"
 
   # scripts
-  - trigger: ";ip"
+  - trigger: ";ip;"
     replace: "{{shelloutput}}"
     vars:
       - name: shelloutput
@@ -68,7 +68,7 @@ matches:
         params:
           cmd: (Invoke-WebRequest ifconfig.me/ip).Content
   # never tested
-  - trigger: ";iplinux"
+  - trigger: ";iplinux;"
     replace: "{{output}}"
     vars:
       - name: output
@@ -89,7 +89,7 @@ matches:
         type: shell
         params:
           cmd: "ii (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path"
-  - trigger: ";rolldice"
+  - trigger: ";rolldice;"
     replace: "{{output}}"
     vars:
       - name: output

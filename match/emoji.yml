@@ -16,7 +16,7 @@ matches:
   - trigger: ";e;"
     replace: ➖
   - trigger: ";-;"
-    replace: ➖    
+    replace: ➖
   - trigger: ";x;"
     replace: ❌
   - trigger: ";na;"
@@ -141,21 +141,21 @@ matches:
   - trigger: ";cool;"
     replace: 🆒
   # number
-  - trigger: ";;0"
+  - trigger: ";0;"
     replace: 0️⃣
-  - trigger: ";;1"
+  - trigger: ";1;"
     replace: 1️⃣
-  - trigger: ";;2"
+  - trigger: ";2;"
     replace: 2️⃣
-  - trigger: ";;3"
+  - trigger: ";3;"
     replace: 3️⃣
-  - trigger: ";;4"
+  - trigger: ";4;"
     replace: 4️⃣
-  - trigger: ";;5"
+  - trigger: ";5;"
     replace: 5️⃣
-  - trigger: ";;6"
+  - trigger: ";6;"
     replace: 6️⃣
-  - trigger: ";;inf"
+  - trigger: ";inf;"
     replace: ♾️
   # others
   - trigger: ";congrat;"

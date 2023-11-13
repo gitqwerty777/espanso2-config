@@ -1,108 +1,108 @@
 matches:
   - triggers:
-      - ";s-ddg"
-      - ";s-duckduckgo"
+      - ";s-ddg;"
+      - ";s-duckduckgo;"
     replace: "https://duckduckgo.com/?q="
   - triggers:
-      - ";s-wiki"
-      - ";s-wikipedia"
+      - ";s-wiki;"
+      - ";s-wikipedia;"
     replace: "https://en.wikipedia.org/w/?search="
   - triggers:
-      - ";s-gh"
-      - ";s-github"
+      - ";s-gh;"
+      - ";s-github;"
     replace: "https://github.com/search?q="
   - triggers:
-      - ";s-so"
-      - ";s-stackoverflow"
+      - ";s-so;"
+      - ";s-stackoverflow;"
     replace: "https://stackoverflow.com/search?q="
   - triggers:
-      - ";s-dh"
-      - ";s-dockerhub"
+      - ";s-dh;"
+      - ";s-dockerhub;"
     replace: "https://hub.docker.com/search?q="
   - triggers:
-      - ";s-wa"
-      - ";s-wolframalpha"
+      - ";s-wa;"
+      - ";s-wolframalpha;"
     replace: "https://www.wolframalpha.com/input/?i="
   - triggers:
-      - ";s-red"
-      - ";s-reddit"
+      - ";s-red;"
+      - ";s-reddit;"
     replace: "https://www.reddit.com/search/?q="
   - triggers:
-      - ";s-bbc"
-      - ";s-bbc"
+      - ";s-bbc;"
+      - ";s-bbc;"
     replace: "https://www.bbc.co.uk/search?q="
   - triggers:
-      - ";s-amz"
-      - ";s-amazon"
+      - ";s-amz;"
+      - ";s-amazon;"
     replace: "https://amazon.co.uk/s?k="
   - triggers:
-      - ";s-yt"
-      - ";s-youtube"
+      - ";s-yt;"
+      - ";s-youtube;"
     replace: "https://youtube.com/results?q="
   - triggers:
-      - ";s-maps"
-      - ";s-maps"
+      - ";s-maps;"
+      - ";s-maps;"
     replace: "https://www.google.com/maps/search/"
   - triggers:
-      - ";s-g"
-      - ";s-google"
+      - ";s-g;"
+      - ";s-google;"
     replace: "https://google.com/search?q="
-  - trigger: ";sp-ddg"
+  - trigger: ";sp-ddg;"
     replace: "https://duckduckgo.com/?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-wiki"
+  - trigger: ";sp-wiki;"
     replace: "https://en.wikipedia.org/w/?search='{{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-gh"
+  - trigger: ";sp-gh;"
     replace: "https://github.com/search?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-so"
+  - trigger: ";sp-so;"
     replace: "https://stackoverflow.com/search?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-dh"
+  - trigger: ";sp-dh;"
     replace: "https://hub.docker.com/search?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-wa"
+  - trigger: ";sp-wa;"
     replace: "https://www.wolframalpha.com/input/?i={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-red"
+  - trigger: ";sp-red;"
     replace: "https://www.reddit.com/search/?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-bbc"
+  - trigger: ";sp-bbc;"
     replace: "https://www.bbc.co.uk/search?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-amz"
+  - trigger: ";sp-amz;"
     replace: "https://amazon.co.uk/s?k={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-yt"
+  - trigger: ";sp-yt;"
     replace: "https://youtube.com/results?q={{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-maps"
+  - trigger: ";sp-maps;"
     replace: "https://www.google.com/maps/search/{{clipboard}}"
     vars:
       - name: clipboard
         type: clipboard
-  - trigger: ";sp-g"
+  - trigger: ";sp-g;"
     replace: "https://google.com/search?q={{clipboard}}"
     vars:
       - name: clipboard
