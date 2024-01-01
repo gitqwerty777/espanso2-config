@@ -109,6 +109,10 @@ matches:
     replace: 🛞
   - trigger: ";save;"
     replace: 💾
+  - trigger: ";sunglass;"
+    replace: 😎
+  - trigger: ";thumb;"
+    replace: 👍
   # symbols
   - trigger: ";end;"
     replace: 🔄
