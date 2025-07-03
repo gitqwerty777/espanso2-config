@@ -13,18 +13,18 @@ matches:
   - trigger: ";mdheader;"
     replace: |
       title:
-      date: {{datetime}}
+      date: 2099-01-01
       categories:
       tags: []
-      description: 「繼續閱讀」
+      description: 【繼續閱讀】
       ---
   - trigger: ";md2header;"
     replace: |
       title:
-      date: {{datetime}}
+      date: 2099-01-01
       categories:
       tags: []
-      description: 「繼續閱讀」
+      description: 【繼續閱讀】
       top_img: ./img/default.svg
       cover: ./img/default.svg
       ---
@@ -59,7 +59,7 @@ matches:
   # possible class: img-small(25)/regular(62)/normal(50)/medium(75)
   - trigger: ";2img;"
     replace: "{% img img-regular /img/.png '\"title\" \"alt\"' %}"
-  - trigger: ";pimg;"
+  - trigger: ";pimg"
     replace: "![$|$]({{clipboard}})"
     vars:
       - name: clipboard

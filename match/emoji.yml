@@ -44,7 +44,7 @@ matches:
     replace: "😝"
   - trigger: ";wow;"
     replace: "😮"
-  # often used in commit message and github
+  # often used at commit message and github
   - trigger: ";feat;"
     replace: 🚀
   - trigger: ";fix;"
